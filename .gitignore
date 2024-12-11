@@ -1,2 +1,11 @@
+# Ignore all files in data/input and data/output
 data/input/*
 data/output/*
+
+# Do not ignore the folders themselves
+!data/input/
+!data/output/
+
+# Allow an empty placeholder file in each folder to ensure they are tracked
+!data/input/.gitkeep
+!data/output/.gitkeep
